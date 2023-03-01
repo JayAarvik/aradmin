@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native"
-import { BGC } from "../../Utils/Import";
+import { StyleSheet, Platform } from "react-native"
+import { BGC, BGR } from "../../Utils/Import";
 
 const Style = StyleSheet.create({
    background:{
@@ -24,16 +24,18 @@ const Style = StyleSheet.create({
     alignItems:"center",
    },
    plusIcon:{
-    backgroundColor:"#D3D3D3",
+    backgroundColor: Platform.OS == "android" ? "#D3D3D3" : "transparent",
     borderRadius:50
    },
    contentView:{
+      paddingTop : Platform.OS == "ios" ? 50 : null,
     margin:20,
     padding:10,
     elevation:5,
     backgroundColor:"#fff"
    },
    contentViewEdit:{
+      paddingTop : Platform.OS == "ios" ? 50 : null,
     margin:10,
     padding:10,
     elevation:5,
@@ -48,7 +50,7 @@ const Style = StyleSheet.create({
       marginTop:20
    },
    editProfileBTN:{
-      backgroundColor:BGC,
+      backgroundColor:BGR,
       marginHorizontal:20,
       padding:12,
       elevation:5,
@@ -57,11 +59,11 @@ const Style = StyleSheet.create({
    textInputStyle:{
       borderBottomWidth:1,
       borderColor:"#DCDCDC",
-      paddingBottom:1,
-      paddingTop:3
+      paddingBottom: Platform.OS == "android" ? 1 : 5,
+      paddingTop: Platform.OS == "android" ? 3 :5
    },
    updateProfileBTN:{
-      backgroundColor:BGC,
+      backgroundColor:BGR,
       marginHorizontal:20,
       padding:12,
       elevation:5,

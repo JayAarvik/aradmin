@@ -2,7 +2,7 @@ import { View, Text, FlatList, TextInput } from 'react-native'
 import React, { useState } from 'react'
 import Style from './Style'
 import { Txt } from '../../Utils/general'
-import { TXTC, BGC } from '../../Utils/Import'
+import { TXTC, BGC, BGR } from '../../Utils/Import'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { TouchableOpacity } from 'react-native-gesture-handler'
@@ -46,7 +46,7 @@ export default function AllOutlets({ navigation }) {
                         }
                     </View>
                     <View style={Style.nextIcon}>
-                        <MaterialIcons size={22} color={BGC} name="arrow-forward-ios" />
+                        <MaterialIcons size={22} color={BGR} name="arrow-forward-ios" />
                     </View>
 
                 </View>

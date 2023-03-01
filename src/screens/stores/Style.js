@@ -1,8 +1,9 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, Platform } from "react-native"
 import { BGC } from "../../Utils/Import";
 
 const Style = StyleSheet.create({
    background:{
+    paddingTop : Platform.OS == "ios" ? 50 : null,
     flex:1,
     backgroundColor:"#fff"
    },
@@ -32,7 +33,7 @@ const Style = StyleSheet.create({
     borderColor:"gray",
     marginLeft:15,
     paddingBottom:1,
-    marginVertical:2,
+    marginVertical: Platform.OS == "android" ? 2 : 10,
     width:"85%",
     paddingTop:1
    },

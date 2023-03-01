@@ -1,7 +1,7 @@
 import { View, Text, Image, TextInput, ImageBackground, ScrollView, TouchableOpacity } from 'react-native'
 import React, { useState, useEffect } from 'react';
 import Style from './Style';
-import { BGC, BGI, TXTC } from '../../Utils/Import';
+import { BGC, BGI, BGR, TXTC } from '../../Utils/Import';
 import { InTextwithbtn, Tcho, Txt } from '../../Utils/general';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -72,7 +72,7 @@ export default function OutletScreen({ navigation }) {
                 >
                     <Txt a="c" pt={2} c="rd" w="600">Check Outlets</Txt>
                 </Tcho> */}
-                <Tcho wd={"100%"} mt={35} bg={BGC} ht={40} br={5}
+                <Tcho wd={"100%"} mt={35} bg={BGR} ht={40} br={5}
                     onPress={() => EditOutlet()}
                 >
                     <Txt a="c" pt={2} c="w" w="400">Edit Outlet Details</Txt>

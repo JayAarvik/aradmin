@@ -143,19 +143,27 @@ export const Txt = p => {
         fontSize: p.s ? p.s : 14,
         fontWeight: p.w ? p.w : null,
         color:
-          p.c === 'g'
-            ? '#818181'
-            : p.c === 'gr'
-            ? '#028A0F'
-            : p.c === 'w'
-            ? '#FFFFFF'
-            : p.c === 'rd'
-            ? "#ce171f"
-            : p.c === 'ttl'
-            ? '#111111'
-            : p.c === 'or'
-            ? '#FA5F1A'
-            : '#7f7f7f',
+        p.c === 'g'
+        ? '#818181'
+        : p.c === 'gr'
+        ? '#028A0F'
+        : p.c === 'w'
+        ? '#FFFFFF'
+        : p.c === 'rd'
+        ? "#ce171f"
+        : p.c === 'ttl'
+        ? '#111111'
+        : p.c === 'bgr'
+        ? '#7EDA85'
+        : p.c === 'yl'
+        ? '#FFFF00'
+        : p.c === 'bgrdrk'
+        ? '#0EB177'
+        : p.c === 'blue'
+        ? '#02424C'
+        : p.c === 'or'
+        ? '#FA5F1A'
+        : '#7f7f7f',
         lineHeight: p.lh ? p.lh : 20,
         marginBottom: p.mb ? p.mb : 0,
         marginTop: p.mt ? p.mt : 0,

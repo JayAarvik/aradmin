@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native"
-import { BGC } from "../../Utils/Import";
+import { StyleSheet, Platform } from "react-native"
+import { BGC, BGR } from "../../Utils/Import";
 
 const Style = StyleSheet.create({
    background:{
@@ -7,7 +7,7 @@ const Style = StyleSheet.create({
     backgroundColor:"#fff"
    },
    bgImage:{
-    height:150,
+    height: Platform.OS == "android" ? 150 : 200,
     width:"100%",
     resizeMode:"cover"
    },
@@ -22,7 +22,7 @@ const Style = StyleSheet.create({
    },
    brandNameStyle:{
     marginTop:10,
-    backgroundColor:BGC,
+    backgroundColor:BGR,
     paddingHorizontal:5,
     opacity:0.8
    },
@@ -43,6 +43,7 @@ const Style = StyleSheet.create({
     borderRadius:50
    },
    upperBtns:{
+      paddingTop : Platform.OS == "ios" ? 50 : null,
     flexDirection:"row",
     justifyContent:"space-between",
     margin:1

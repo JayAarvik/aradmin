@@ -2,7 +2,7 @@ import { View, Text, ScrollView, ImageBackground, TouchableOpacity, TextInput } 
 import React from 'react'
 import Style from './Style'
 import { Txt } from '../../Utils/general'
-import { BGC, User_Img } from '../../Utils/Import'
+import { BGC, BGR, User_Img } from '../../Utils/Import'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import ImagePicker from 'react-native-image-crop-picker';
@@ -31,7 +31,7 @@ export default function EditProfile({ navigation }) {
                         <ImageBackground source={User_Img}
                             style={Style.userImageStyleEdit}
                             borderRadius={50} blurRadius={8}>
-                            <MaterialIcons size={30} color={BGC} name="edit" style={Style.plusIcon} />
+                            <MaterialIcons size={30} color={BGR} name="edit" style={Style.plusIcon} />
                         </ImageBackground>
                     </TouchableOpacity>
 

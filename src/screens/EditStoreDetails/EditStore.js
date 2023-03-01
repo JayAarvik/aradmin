@@ -5,7 +5,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { Txt } from '../../Utils/general';
-import { BGC } from '../../Utils/Import';
+import { BGC, BGR } from '../../Utils/Import';
 
 export default function EditStore({navigation}) {
     const addStorePhoto = () => {
@@ -30,7 +30,7 @@ export default function EditStore({navigation}) {
             </TouchableOpacity>
             <View style={Style.contentView}>
                 <TouchableOpacity style={Style.addPhotoStyle} onPress={() => addStorePhoto()}>
-                    <MaterialIcons size={30} color={BGC} name="add-circle-outline" />
+                    <MaterialIcons size={30} color={BGR} name="add-circle-outline" />
                 </TouchableOpacity>
                 <Txt a="c" c="g" w="500" s={11}>Edit Store Photo</Txt>
 
